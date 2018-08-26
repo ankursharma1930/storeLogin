@@ -1,0 +1,19 @@
+<?php
+/**
+ * @var $block \Payless\Storelogin\Block\Checklogin
+ */
+?>
+<div>
+    <?php
+    $session_valuse = '';
+    if(isset($_SESSION['store_login'])){
+    	$session_valuse = $_SESSION['store_login'];
+	}
+    
+    if(!$session_valuse){
+        	$block->redirectToLogin();
+    }else{
+        echo "<a href='".$block->getLogout()."'>Logout</a>";
+    }
+    ?>
+</div>

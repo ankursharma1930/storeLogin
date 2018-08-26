@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+	<router id="standard">
+		<route frontName="payless_storelogin" id="payless_storelogin">
+			<module name="Payless_Storelogin"/>
+		</route>
+	</router>
+</config>

@@ -1,0 +1,36 @@
+<div class="store_aglin">
+<h1><?php echo __('Store Login'); ?></h1>
+<form action="<?php echo $block->getFormAction(); ?>" method="post" id="login_form">
+    <input name="store_code" type="text" placeholder="Please Enter Store Code Here">
+    <input type="submit" value="Login">
+</form>
+</div>
+<script type="text/javascript">
+require(['jquery'],function(){
+    jQuery(document).ready(function() {
+        jQuery("#login_form").submit(function(){
+
+            var store_code = jQuery("input[name='store_code']").val();
+            var url = "<?php echo $block->getBaseUrl().$block->getFormAction() ?>";
+            jQuery.ajax({
+            url: url,
+            type: "POST",
+            data: {store_code:store_code},
+            showLoader: true,
+            cache: false,
+            success: function(response){
+
+                if(response) {
+                    if(response[0].is_active){
+                       window.location.href = response[0].store_url;
+                    }else{
+                        alert('store is not active');
+                    }
+                }
+            }
+        });
+        return false;
+        });
+    });
+});
+</script>

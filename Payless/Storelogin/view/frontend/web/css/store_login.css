@@ -1,0 +1,16 @@
+    .store_aglin {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 35%;
+    transform: translateY(-50%);
+    left: 33%;
+    /* right: 50%; */
+}
+.store_aglin input[type="text"] {
+    width: 255px;
+}
+.payless-storelogin-index-index {
+    background: url(../images/teambackgroundImage.png) no-repeat center center;
+    background-size: contain;
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<body>
+		<referenceContainer name="content">
+			<referenceContainer name="head" remove="true"/>
+		    <referenceContainer name="header.container" remove="true"/>
+		    <referenceContainer name="menu" remove="true"/>
+		    <referenceContainer name="notifications" remove="true"/>
+		    <referenceContainer name="footer" remove="true"/>
+		    <referenceBlock name="catalog.topnav" remove="true"/>
+			<block class="Payless\Storelogin\Block\Index\Index" name="index.index" template="Payless_Storelogin::index/index.phtml" cacheable="false"/>
+		</referenceContainer>
+	</body>
+</page>

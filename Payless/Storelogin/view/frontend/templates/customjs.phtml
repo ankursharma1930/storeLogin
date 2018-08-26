@@ -1,0 +1,29 @@
+<?php
+/**
+ * @var $block \Payless\Storelogin\Block\Checklogin
+ */
+
+$postcode = $block->getConfig('start_end_date/origin/postcode');
+if($postcode){
+	?>
+
+<script>// <![CDATA[
+        require([
+            'jquery',
+            'domReady!'
+        ], function ($) {
+        	$(document).on('addressData', function() {
+        		console.log('sharma');
+  // do something
+})
+        	$(document).ready(function(){
+
+
+        	console.log('ankur');
+        	});
+            // Your Code
+        });
+        // ]]>
+</script>
+
+<?php }

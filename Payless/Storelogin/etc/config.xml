@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+	<default>
+		<start_end_date>
+			 <origin>
+                <country_id>AU</country_id>
+            </origin>
+            <owner_details>
+                <store_owner_name>Payless</store_owner_name>
+                <club_owner_name>Payless</club_owner_name>
+                <club_owner_email>info@paylesspromotions.com.au</club_owner_email>
+            </owner_details>
+		</start_end_date>
+	</default>
+</config>
